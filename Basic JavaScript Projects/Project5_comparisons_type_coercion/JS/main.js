@@ -120,7 +120,7 @@ console.log(10 > 100); // 10 is not greater than 100
             document.getElementById("Not").innerHTML = !(20 > 10);
         }
 
-        // Double Negative
+        // True aka Double Negative
         function dblNeg_Function() {
             document.getElementById("DoubleNegative").innerHTML = !(5 > 10);
         }
