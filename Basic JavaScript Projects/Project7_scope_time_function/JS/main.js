@@ -49,3 +49,22 @@ function my_If() {
     }
 }
 
+// ASSIGNMENT #43
+// ELSE IF STATEMENTS
+// follows an if statement and is executed if the if statement is false
+// example: if hungry, eat. else if thirsty, drink. else, rest
+
+function Time_function() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time > 12 == Time < 18) {
+        Reply = "It is the aftertime.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("Time_of_day").innerHTML = Reply;
+}
