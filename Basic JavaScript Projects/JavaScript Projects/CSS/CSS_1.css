@@ -1,0 +1,28 @@
+h2 {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+label, input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input {
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 7px;
+}
+
+input[type=submit] {
+    background-color: rgb(86, 187, 86);
+    color: beige;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+input[type=submit]:hover {
+    background-color:rgb(150, 201, 150);
+    color: black;
+    cursor: grab;
+}

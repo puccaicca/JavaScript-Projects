@@ -26,3 +26,32 @@ function Color_Function() {
     }
     document.getElementById("Output").innerHTML = Color_Output;
 }
+
+// getElementbyClassName() method
+
+function Hello_World() {
+    var A = document.getElementsByClassName("Click");
+    A[0].innerHTML = "The text has changed!"; // will only change the first h3 class
+}
+
+// Use <canvas> to create graphics
+
+    // Hello World text
+    var c = document.getElementById("ID_Name");
+    var ctx = c.getContext("2d");
+    ctx.font = "70px Arial";
+    ctx.fillText("Hello World", 70, 120);
+
+    // Linear Gradient
+    var c = document.getElementById("LinearGradient");
+    var ctx = c.getContext("2d");
+
+        // Create gradient
+        var grd = ctx.createLinearGradient(10, 30, 300, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, 500, 300);
+
