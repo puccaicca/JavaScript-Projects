@@ -5,8 +5,8 @@
 </head>
 <body>
 <script>
-$(document).ready(function() {
-    $("html").append(
+$(document).ready(function() { /* targets the whole document and indicates when it is ready, to peform the function */
+    $("html").append( /* targets html to append the body tag, div tags, and p tags */
         "<body>\
             <div id='container'>\
                 <div id='inner'>\
@@ -18,12 +18,12 @@ $(document).ready(function() {
             </div>\
         </body>"
     );
-    $("#2").css({"color":"red"});
-    $("#3").click(function () {
+    $("#2").css({"color":"red"}); /* targets the p id '2' to make the text red */
+    $("#3").click(function () { /* targets tge p id '3' on click it will hide the h1 and put the message in console log */
         $('h1').hide();
         console.log("You successfully hid the headiing");
     });
-    $("#1").slideUp('200');
+    $("#1").slideUp('200'); /* targets the p id '1' to hide text with slideUp animation */
 });
 
 
