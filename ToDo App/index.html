@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/todo.css">
+    <scirpt src="js/todo.js"></scirpt>
+    <title>ToDo App</title>
+</head>
+<body>
+    <p id="myDog"></p>
+    <p id="myDog2"></p>
+    <p id="myDog3"></p>
+
+    <input id="task"><button id="add">Add Item</button>
+    <hr>
+    <div id="todos"></div>
+
+    
+    
+    <script>
+        /* JS dictionary object - stringify method*/
+        var dog = {name: "Dax", breed: "Great Pyrenees", color: "White"};
+        /* convet JS objects to string format */
+        var JSONstring = JSON.stringify(dog);
+        document.getElementById("myDog").innerHTML = JSONstring; 
+
+        /* JSON parse method */
+        /* This is a JSON string variable */
+        var dog2 = '{"name": "Dax", "breed": "Great Pyreness", "color": "White"}';
+        /* Convert JSON strings to JS objects */
+        var JSONstring = JSON.parse(dog2);
+        document.getElementById("myDog2").innerHTML = JSONstring.name + " the " +
+            JSONstring.breed;
+
+        /* localStorage() method */
+        /* sets the data as a key value pair to be saved locally in your browser */
+        localStorage.setItem("Name", "Dax");
+        /* then use the key "Name" to return its value "Dax" */
+        document.getElementById("myDog3").innerHTML = localStorage.getItem("Name");
+
+
+    </script>
+    
+
+    <footer>2022 &copy; Lilian Tan</footer>
+</body>
+</html>
