@@ -28,8 +28,9 @@ li {
 }
 
 #todos {
-    padding: 200px;
+    padding-bottom: 200px;
 }
+
 footer {
     border: 2px solid black;
     padding: 5px;
@@ -38,3 +39,8 @@ footer {
     text-align: center;
     display: inline-block;
 }
+
+.remove { /* this adds padding to the bottom ater array has been deleted */
+    padding-bottom: 5px;
+}
+
